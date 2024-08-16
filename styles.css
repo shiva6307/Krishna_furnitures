@@ -1,0 +1,489 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #3e3e3e;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.site-header {
+    background: #6b705c;
+    padding: 1em 0;
+    /* position: sticky; */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.site-header .logo h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar ul {
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 1em;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #b7b7a4;
+    border-radius: 5px;
+}
+
+
+
+
+
+.hero {
+    background-image: url('BG_1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero-content .btn {
+    padding: 0.7em 2em;
+    color: #fff;
+    background-color: #cb997e;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content .btn:hover {
+    background-color: #b7b7a4;
+}
+
+.about,
+.services,
+.gallery,
+.customize,
+.testimonials,
+.contact {
+    padding: 4em 0;
+    background-color: #f5f5f5;
+}
+
+.about h2,
+.services h2,
+.gallery h2,
+.customize h2,
+.testimonials h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.services-grid,
+.gallery-grid,
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+}
+
+.service-item,
+.gallery-item,
+.testimonial-item {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item h3,
+.gallery-item-info h3,
+.testimonial-item h4 {
+    margin-bottom: 1em;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+
+.service-item p,
+.testimonial-item p {
+    color: #555;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item:hover .gallery-item-info {
+    background-color: rgba(107, 112, 92, 0.8);
+}
+
+/* .customize-tool label,
+.customize-tool select,
+.customize-tool input,
+.customize-tool button {
+    display: block;
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.customize-tool button {
+    padding: 0.7em 2em;
+    background-color: #cb997e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.customize-tool button:hover {
+    background-color: #b7b7a4;
+} */
+
+/* Customize Your Furniture Section */
+.customize {
+    background-color: #f4f4f4;
+    padding: 2em 1em;
+}
+
+.customize .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.customize h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.2em;
+    color: #3e3e3e;
+    margin-bottom: 1.5em;
+}
+
+.customize .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.customize .option-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    width: calc(33% - 2em);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.customize .option-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.customize .option-card h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    color: #6b705c;
+    margin: 0;
+}
+
+.customize .option-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin: 0.5em 0 1em;
+}
+
+.customize .option-card button {
+    background-color: #cb997e; 
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.7em 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.customize .option-card button:hover {
+    background-color: #a89f91;
+} 
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customize .option-card {
+        width: calc(50% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .customize .option-card {
+        width: 100%;
+    }
+}
+
+
+/* Customer Reviews Section */
+.reviews {
+    background-color: #f9f9f9;
+    padding: 2em 0;
+}
+
+.reviews .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.reviews h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    color: #3e3e3e;
+    margin-bottom: 1em;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    margin: 1em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.review-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.review-card h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.1em;
+    color: #6b705c;
+    margin: 0;
+}
+
+.review-card .rating {
+    color: #f8c42f; /* Gold for stars */
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .review-card {
+        flex: 1 1 calc(50% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* FAQs Section */
+.faqs-section {
+    background-color: #f9f9f9;
+    padding: 2em 1em;
+}
+
+.faqs-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.faqs-section h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.2em;
+    color: #3e3e3e;
+    margin-bottom: 1.5em;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0.5em 1em;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 0.7em 2em;
+    background-color: #6b705c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #b7b7a4;
+}
+
+.contact-details p {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.contact-details a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+
+.site-footer {
+    background-color: #3e3e3e;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.site-footer a:hover {
+    color: #b7b7a4;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+    
+    .hero-content p {
+        font-size: 1em;
+    }
+    
+    .services-grid,
+    .gallery-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+

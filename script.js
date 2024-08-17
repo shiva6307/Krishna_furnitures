@@ -8,6 +8,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+/* Nav Bar */
+const menuIcon = document.getElementById('menu-icon');
+  const navLinks = document.getElementById('nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuIcon.innerHTML = navLinks.classList.contains('active') 
+      ? '<i class="fas fa-times"></i>' 
+      : '<i class="fas fa-bars"></i>';
+  });
+
+
+
 // Customize Furniture Feature
 const furnitureType = document.getElementById('furniture-type');
 const furnitureColor = document.getElementById('furniture-color');
@@ -32,24 +45,6 @@ customizeButton.addEventListener('click', () => {
         });
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const faqQuestions = document.querySelectorAll('.faq-question');
-    
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', function () {
-                const answer = this.nextElementSibling;
-    
-                // Toggle the display of the answer
-                if (answer.style.display === 'block') {
-                    answer.style.display = 'none';
-                } else {
-                    // Hide all answers
-                    document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
-                    // Show the selected answer
-                    answer.style.display = 'block';
-                }
-            });
-        });
-    });
-    
 
+
+  
